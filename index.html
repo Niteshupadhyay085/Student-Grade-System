@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="app-title">Student Grade Analyzer</h1>
+    </div>
+
+    <form action="#" class="student-form">
+        <div class="form-inputs">
+            <input type="text" name="name" id="student-name" class="input-name" placeholder="Enter student name" >
+            <input type="number" id="student-number" class="input-marks" placeholder="Enter marks">
+        </div>
+
+        <section class="form-actions"> 
+            <button type="button" class="btn-add" id="add-student-btn">Add Student</button>
+            <button type="button" class="btn-analyze" id="add-student-grade">Analyze Grade</button>
+        </section>
+    </form>
+
+    <table border="1" class="student-details-table">
+        <thead>
+            <tr>
+                <th class="col-name">Name</th>
+                <th class="col-marks">Marks</th>
+                <th class="col-grade">Grade</th>
+            </tr>
+        </thead>
+        <tbody class="student-details-body" id="student-details-input">
+            <!-- Student rows will go here -->
+        </tbody>
+    </table>
+
+    <table border="1" class="summary-result-table">
+        <thead>
+            <tr>
+                <th class="col-average">Average</th>
+                <th class="col-topper">Topper</th>
+                <th class="col-pass">Pass</th>
+                <th class="col-fail">Fail</th>
+            </tr>
+        </thead>
+        <tbody class="summary-result-body">
+            <!-- Summary row will go here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

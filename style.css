@@ -1,0 +1,132 @@
+/* === Step 1: Layout & Structure === */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5; /* light background for readability */
+}
+
+/* Container */
+.app-container {
+  background-color: #4b0082; /* Indigo main header */
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 15px 30px;
+  margin: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* === Step 2: Form Design === */
+.student-form {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-name,
+.input-marks {
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 2px solid #4b0082;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.input-name:focus,
+.input-marks:focus {
+  outline: none;
+  border-color: #800080; /* purple focus */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-add {
+  background-color: #28a745; /* green */
+  color: white;
+}
+
+.btn-analyze {
+  background-color: #007bff; /* blue */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* === Step 3: Table Styling === */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 90%;
+  max-width: 700px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: #4b0082;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* === Step 5: Responsive Design === */
+@media (max-width: 600px) {
+  .form-inputs {
+    flex-direction: column;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
