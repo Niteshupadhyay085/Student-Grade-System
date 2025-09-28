@@ -30,7 +30,7 @@ A simple web application to manage student marks, calculate grades, and show sum
 
 ## Live Demo
 
-[View Live Project](https://niteshupadhyay085.github.io/Student-Grade-System/)
+[View Live Project](https://studentgradesystem.netlify.app/)
 
 ## Project Structure
 
